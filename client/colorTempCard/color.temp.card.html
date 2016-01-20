@@ -1,0 +1,15 @@
+<template name="colorTempCard">
+
+  <div class="color-temp-wrapper">
+
+    <p> Not found the color, but it's look like this: <b>Click and Save it</b></p>
+    {{ #each arrayify colorObject}}
+      <div class="color-temp-card">
+        <div class="color-code">
+          {{value}}
+        </div>
+      </div>
+    {{ /each}}
+  </div>
+
+</template>

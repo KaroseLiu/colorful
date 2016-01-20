@@ -1,0 +1,11 @@
+<template name="colorPanel">
+  <div class="karose-color-panel">
+    {{ #if colors.length }}
+      {{ #each colors }}
+        {{ >colorCard }}
+      {{ /each }}
+    {{ else }}
+      {{ >colorTempCard }}
+    {{ /if }}
+  </div>
+</template>

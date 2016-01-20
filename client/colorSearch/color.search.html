@@ -1,0 +1,12 @@
+<template name="colorSearch">
+  <div class="color-search container">
+    <div class="row">
+      <div class="search-wrraper">
+        <input type="text" id="search_value" name="name" value="" placeholder="Search your color">
+        {{ #if isValidHexColorCode colors}}
+          <span class="error-message">You should input the valid hex color code between 0~F. e.g: 00AAFF</span>
+        {{ /if }}
+      </div>
+    </div>
+  </div>
+</template>
